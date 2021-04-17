@@ -25,7 +25,7 @@ app.use(async (ctx, next) => {
   }
 })
 // 启动静态资源服务
-app.use(staticFiles(path.resolve(__dirname, '../../uploads')))
+app.use(staticFiles(path.resolve(__dirname, '../../../uploads')))
 
 app.use(async (ctx, next) => {
   const {authorization} = ctx.headers
